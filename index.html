@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Appointment Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Online Appointment Booking System</h1>
+  </header>
+
+  <main class="main-container">
+    <!-- Booking Form -->
+    <section class="form-section">
+      <h2>Book an Appointment</h2>
+      <form id="bookingForm">
+        <label for="role">Book with:</label>
+        <select id="role" required>
+          <option value="">--Select--</option>
+          <option value="Doctor">Doctor</option>
+          <option value="Teacher">Teacher</option>
+        </select>
+
+        <label for="name">Select Name:</label>
+        <select id="name" required>
+          <option value="">--Select--</option>
+        </select>
+
+        <label for="date">Choose Date:</label>
+        <input type="date" id="date" required>
+
+        <label for="time">Choose Time Slot:</label>
+        <select id="time" required>
+          <option value="">--Select--</option>
+          <option value="09:00 AM">09:00 AM</option>
+          <option value="10:00 AM">10:00 AM</option>
+          <option value="11:00 AM">11:00 AM</option>
+          <option value="02:00 PM">02:00 PM</option>
+          <option value="03:00 PM">03:00 PM</option>
+        </select>
+
+        <button type="submit">Book Appointment</button>
+      </form>
+    </section>
+
+      <section class="dashboard-section">
+      <h2>Appointments Dashboard</h2>
+      <table id="dashboard">
+        <thead>
+          <tr>
+            <th>Role</th>
+            <th>Name</th>
+            <th>Location</th>
+            <th>Date</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Appointment Booking System</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
